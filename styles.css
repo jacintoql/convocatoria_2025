@@ -1,0 +1,408 @@
+/* Estilos generales */
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #242b57;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px 25px;
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    width: 100%; /* Utiliza el 100% del ancho del contenedor padre */
+    max-width: 350px; /* Max width para no sobredimensionar el logo */
+    height: auto; /* Altura automática para mantener la proporción */
+    margin-left: 30px; /* Margen izquierdo estándar */
+}
+
+header nav {
+    margin-left: auto;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin-right: 50px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.main-title,
+.sub-title {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.main-title {
+    color: #333;
+    font-size: 1.75rem;
+    font-weight: 500;
+}
+
+.sub-title {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.instituciones-title {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #242b57;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+.institucion {
+    text-align: center;
+    margin-bottom: 50px;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.institucion:hover {
+    transform: scale(1.05);
+}
+
+.institucion img {
+    width: 100px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.institucion img:hover {
+    transform: scale(1.1);
+}
+
+.institucion button {
+    background-color: #242b57;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition:
+        background-color 0.3s,
+        transform 0.3s;
+    font-weight: 500;
+}
+
+.institucion button:hover {
+    background-color: #242b57;
+    transform: scale(1.05);
+}
+
+.universidad-title {
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #242b57;
+    margin-top: 10px;
+}
+
+.convocatoria {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #242b57;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition:
+        background-color 0.3s,
+        color 0.3s,
+        transform 0.3s;
+    font-size: 0.9rem;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.convocatoria:hover {
+    background-color: #6d727a;
+    color: #ffffff;
+    transform: translateX(-50%) scale(1.05);
+    text-decoration: none;
+}
+
+.career_links {
+    display: block;
+    margin: 10px 0;
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.carousel-inner {
+    min-height: 300px;
+}
+
+.carousel-item a {
+    display: block;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 424px) {
+    header .logo {
+        margin-left: auto; /* Center the logo horizontally */
+        margin-right: auto; /* Center the logo horizontally */
+        max-width: 200px; /* Smaller max width for logo */
+    }
+
+    header nav ul {
+        flex-direction: column; /* Stack nav items vertically on smaller screens */
+        align-items: center; /* Center alignment for nav items */
+    }
+
+    header nav ul li {
+        margin-right: 0; /* Remove right margin on smaller screens */
+        margin-bottom: 10px; /* Add bottom margin for spacing */
+    }
+
+    .main-title,
+    .sub-title {
+        font-size: 1.2rem; /* Smaller font size for main title */
+        margin: 10px 15px; /* Adjusted margin for smaller screens */
+    }
+
+    .sub-title {
+        font-size: 0.9rem; /* Smaller font size for subtitle */
+    }
+    .career_links {
+        font-size: 14px;
+    }
+    .institucion img {
+        width: 80px;
+    }
+}
+/* Estilos generales */
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #242b57;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px 25px;
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    width: 100%; /* Utiliza el 100% del ancho del contenedor padre */
+    max-width: 350px; /* Max width para no sobredimensionar el logo */
+    height: auto; /* Altura automática para mantener la proporción */
+    margin-left: 30px; /* Margen izquierdo estándar */
+}
+
+header nav {
+    margin-left: auto;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin-right: 50px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.main-title,
+.sub-title {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.main-title {
+    color: #333;
+    font-size: 1.75rem;
+    font-weight: 500;
+}
+
+.sub-title {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.instituciones-title {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #242b57;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+.institucion {
+    text-align: center;
+    margin-bottom: 50px;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.institucion:hover {
+    transform: scale(1.05);
+}
+
+.institucion img {
+    width: 100px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.institucion img:hover {
+    transform: scale(1.1);
+}
+
+.institucion button {
+    background-color: #242b57;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition:
+        background-color 0.3s,
+        transform 0.3s;
+    font-weight: 500;
+}
+
+.institucion button:hover {
+    background-color: #242b57;
+    transform: scale(1.05);
+}
+
+.universidad-title {
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #242b57;
+    margin-top: 10px;
+}
+
+.convocatoria {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #242b57;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition:
+        background-color 0.3s,
+        color 0.3s,
+        transform 0.3s;
+    font-size: 0.9rem;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.convocatoria:hover {
+    background-color: #6d727a;
+    color: #ffffff;
+    transform: translateX(-50%) scale(1.05);
+    text-decoration: none;
+}
+
+.career_links {
+    display: block;
+    margin: 10px 0;
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.carousel-inner {
+    min-height: 300px;
+}
+
+.carousel-item a {
+    display: block;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 424px) {
+    header .logo {
+        margin-left: auto; /* Center the logo horizontally */
+        margin-right: auto; /* Center the logo horizontally */
+        max-width: 200px; /* Smaller max width for logo */
+    }
+
+    header nav ul {
+        flex-direction: column; /* Stack nav items vertically on smaller screens */
+        align-items: center; /* Center alignment for nav items */
+    }
+
+    header nav ul li {
+        margin-right: 0; /* Remove right margin on smaller screens */
+        margin-bottom: 10px; /* Add bottom margin for spacing */
+    }
+
+    .main-title,
+    .sub-title {
+        font-size: 1.2rem; /* Smaller font size for main title */
+        margin: 10px 15px; /* Adjusted margin for smaller screens */
+    }
+
+    .sub-title {
+        font-size: 0.9rem; /* Smaller font size for subtitle */
+    }
+    .career_links {
+        font-size: 14px;
+    }
+    .institucion img {
+        width: 80px;
+    }
+}
